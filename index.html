@@ -19,8 +19,23 @@
                 <h1>Login</h1>
                 <p>Seja bem vindo(a) novamente. Faça login para construir as configurções no seu ambiente.</p>
 
-                <form method="post">
+                <form method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu email" autocomplete="email" required maxlength="30">
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="Senha" id="isenha" placeholder="Mínimo 5 caracteres" autocomplete="current-password" required minlength="5">
+                        <label for="isenha">Senha</label>
+                    </div>
 
+                    <input type="submit" value="Entrar">
+                    <a href="#">
+                        Esqueci a senha
+                        <span class="material-symbols-outlined">mail</span>
+                    </a>
                 </form>
             </div>
         </section>
